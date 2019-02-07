@@ -1,3 +1,3 @@
-# CSE3110-Lessons
+# CSE3110 Iterative Algorithms
 
 Iterative algorhithms
