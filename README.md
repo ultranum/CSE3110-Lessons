@@ -13,3 +13,4 @@ for i in range(len(li))
 if li[i] == value:
 return True
 ``` 
+Linear searches's time to process is directly proportional to the length of the data set being processed.  The bigger the set the longer it will take.
