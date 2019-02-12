@@ -1,4 +1,4 @@
-import random, time, math
+import random, time, math, statistics
 
 li = []
 for i in range(60000):
@@ -20,7 +20,7 @@ def linear():
                 break
         endTime = time.perf_counter()
         totaltimelin.append(endTime - startTime)
-    print(math.mean(totaltimelin))
+    print(statistics.mean(totaltimelin))
 
 def binary():
     start = 0  # lowest index value to calculate midpoint
