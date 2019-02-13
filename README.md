@@ -32,3 +32,14 @@ The advantage of binary search is that it is orders of magnitude faster than lin
 Just like with search algorithms, sorting algorithms have varying levels of efficiency.  There are several types of sort algorithms including Bubble Sort, Selection Sort, Insertion Sort, and Merge Sort.  More complicated sort algorithms, like the .sort() for python arrays use a combination of simpler sorts.  Python uses Timsort which is combination of merge and insertion sort designed by Tim Peters.
 
 ### Bubble Sort
+
+Bubble Sort compares two adjacent values on the list and rearranges them from lowest to highest.  Then it moves to the next index pair and repeats the process. At the end of each iteration, the highest value will appear at the end of the list.
+
+| 5 | 17 | 13 | 11 | 1 | 7 | 3 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5 | 13 | 11 | 1 | 7 | 3 | __17__ |
+| 5 | 3 | 11 | 1 | 7 | __13__ | __17__ |
+| 5 | 3 | 7 | 1 | __11__ | __13__ | __17__ |
+| 5 | 3 | 1 | __7__ | __11__ | __13__ | __17__ |
+| 3 | 1 | __5__ | __7__ | __11__ | __13__ | __17__ |
+| 1 | __3__ | __5__ | __7__ | __11__ | __13__ | __17__ |
