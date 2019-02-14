@@ -7,7 +7,7 @@ import time, statistics, random
 
 timetotal = []
 for i in range(30):
-    li = random.sample(range(100), 100)
+    li = random.sample(range(10000), 10000)
     print(li)
     startTime = time.perf_counter()
     for i in range(len(li)):
