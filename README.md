@@ -43,3 +43,19 @@ Bubble Sort compares two adjacent values on the list and rearranges them from lo
 | 5 | 3 | 1 | __7__ | __11__ | __13__ | __17__ |
 | 3 | 1 | __5__ | __7__ | __11__ | __13__ | __17__ |
 | 1 | __3__ | __5__ | __7__ | __11__ | __13__ | __17__ |
+
+### Selection Sort
+
+Selection sort identifies the smallest value in the array and compares that value to the current smallest position in the array.  If the smallest value is not in the lowest position, selection sort will switch the two values so that the current lowest position has the current lowest value.
+
+Unlike Bubble sort, Selection sort orders the values starting at the beginning of the list and sorts towards the end.
+
+| 5 | 17 | 13 | 11 | 1 | 7 | 3 |
+| --- | --- | --- | --- | --- | --- | --- |
+| __1__ | 17 | 13 | 11 | 5 | 7 | 3 |
+| __1__ | __3__ | 13 | 11 | 5 | 7 | 17 |
+| __1__ | __3__ | __5__ | 11 | 13 | 7 | 17 |
+| __1__ | __3__ | __5__ | __7__ | 13 | 11 | 17 |
+| __1__ | __3__ | __5__ | __7__ | __11__ | 13 | 17 |
+| __1__ | __3__ | __5__ | __7__ | __11__ | __13__ | 17 |
+
