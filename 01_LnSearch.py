@@ -10,7 +10,7 @@ import random, time
 
 #Array
 li = []
-for i in range(10):
+for i in range(100):
     if random.randrange(2) == 1:
         li.append(i)
 
