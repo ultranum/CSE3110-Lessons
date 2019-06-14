@@ -38,10 +38,10 @@ Bubble Sort compares two adjacent values on the list and rearranges them from lo
 | 5 | 17 | 13 | 11 | 1 | 7 | 3 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 5 | 13 | 11 | 1 | 7 | 3 | __17__ |
-| 5 | 3 | 11 | 1 | 7 | __13__ | __17__ |
-| 5 | 3 | 7 | 1 | __11__ | __13__ | __17__ |
-| 5 | 3 | 1 | __7__ | __11__ | __13__ | __17__ |
-| 3 | 1 | __5__ | __7__ | __11__ | __13__ | __17__ |
+| 5 | 11 | 1 | 7 | 3 | __13__ | __17__ |
+| 5 | 1 | 7 | 3 | __11__ | __13__ | __17__ |
+| 1 | 5 | 3 | __7__ | __11__ | __13__ | __17__ |
+| 1 | 3 | __5__ | __7__ | __11__ | __13__ | __17__ |
 | 1 | __3__ | __5__ | __7__ | __11__ | __13__ | __17__ |
 
 ### Selection Sort
@@ -59,3 +59,17 @@ Unlike Bubble sort, Selection sort orders the values starting at the beginning o
 | __1__ | __3__ | __5__ | __7__ | __11__ | 13 | 17 |
 | __1__ | __3__ | __5__ | __7__ | __11__ | __13__ | 17 |
 
+### Insertion Sort
+
+Insertion sort goes through the list and inserts the lowest value into the current testing position. As it progressed through the list, more and more of the list is sorted to the left of the testing position.
+
+Aside: There are two common sorting algorithms. One searches to the left of the current testing position, the other to the right. In general, the right search is faster because it can arrange multiple values in a single pass.
+
+| 5 | 17 | 13 | 11 | 1 | 7 | 3 |
+| --- | --- | --- | --- | --- | --- | --- |
+| __1__ | 5 | 17 | 13 | 11 | 7 | 3 |
+| __1__ | __3__ | 5 | 17 | 13 | 11 | 7 |
+| __1__ | __3__ | __5__ | 17 | 13 | 11 | 7 |
+| __1__ | __3__ | __5__ | __7__ | 11 | 13 | 17 |
+| __1__ | __3__ | __5__ | __7__ | __11__ | __13__ | 17 |
+| __1__ | __3__ | __5__ | __7__ | __11__ | __13__ | 17 |
